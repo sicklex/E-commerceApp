@@ -7,6 +7,7 @@ import {
   AppBar,
   Toolbar,
   Typography,
+  Badge,
 } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
@@ -18,11 +19,14 @@ import Menu from "@mui/material/Menu";
 import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function MenuBar({ children }) {
   const [mode, setMode] = useState("light");
   const [auth, setAuth] = useState(true);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
 
   const colorMode = useMemo(
     () => ({
@@ -73,7 +77,6 @@ function MenuBar({ children }) {
     color: "inherit",
     "& .MuiInputBase-input": {
       padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create("width"),
       width: "100%",
@@ -83,12 +86,14 @@ function MenuBar({ children }) {
     },
   }));
 
-  const handleMenu = event => {
-    setAnchorEl(event.currentTarget);
+  const handleLoginMenu = event => {
+    anchorEl == null ? setAnchorEl(event.currentTarget) : setAnchorEl(null);
   };
 
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleMenu = event => {
+    menuAnchorEl == null
+      ? setMenuAnchorEl(event.currentTarget)
+      : setMenuAnchorEl(null);
   };
 
   return (
@@ -103,9 +108,28 @@ function MenuBar({ children }) {
               edge="start"
               color="inherit"
               aria-label="menu"
+              onClick={handleMenu}
             >
               <MenuIcon />
             </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={menuAnchorEl}
+              anchorOrigin={{
+                vertical: "center",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(menuAnchorEl)}
+              onClose={handleMenu}
+            >
+              <MenuItem onClick={handleMenu}>Profile</MenuItem>
+              <MenuItem onClick={handleMenu}>My account</MenuItem>
+            </Menu>
             <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
               SHOP BY CATEGORY
             </Typography>
@@ -122,16 +146,15 @@ function MenuBar({ children }) {
               <div>
                 <IconButton
                   size="large"
-                  aria-label="account of current user"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
-                  onClick={handleMenu}
+                  onClick={handleLoginMenu}
                   color="inherit"
                 >
                   <AccountCircle />
                 </IconButton>
                 <Menu
-                  id="menu-appbar"
+                  id="login-appbar"
                   anchorEl={anchorEl}
                   anchorOrigin={{
                     vertical: "bottom",
@@ -143,11 +166,21 @@ function MenuBar({ children }) {
                     horizontal: "right",
                   }}
                   open={Boolean(anchorEl)}
-                  onClose={handleClose}
+                  onClose={handleLoginMenu}
                 >
-                  <MenuItem onClick={handleClose}>Profile</MenuItem>
-                  <MenuItem onClick={handleClose}>My account</MenuItem>
+                  <MenuItem onClick={handleLoginMenu}>Profile</MenuItem>
+                  <MenuItem onClick={handleLoginMenu}>My account</MenuItem>
                 </Menu>
+                <IconButton color="inherit">
+                  <Badge badgeContent={2} color="error">
+                    <FavoriteIcon />
+                  </Badge>
+                </IconButton>
+                <IconButton color="inherit">
+                  <Badge badgeContent={4} color="error">
+                    <ShoppingCartIcon />
+                  </Badge>
+                </IconButton>
                 <IconButton
                   sx={{ ml: 2 }}
                   onClick={colorMode.toggleColorMode}
