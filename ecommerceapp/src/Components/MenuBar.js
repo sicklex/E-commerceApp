@@ -15,8 +15,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { styled, alpha } from "@mui/material/styles";
+import SearchIcon from "@mui/icons-material/Search";
+import InputBase from "@mui/material/InputBase";
 
-function SwitchMode({ children }) {
+function MenuBar({ children }) {
   const [mode, setMode] = useState("light");
   const [auth, setAuth] = useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -40,6 +43,46 @@ function SwitchMode({ children }) {
     [mode]
   );
 
+  const Search = styled("div")(({ theme }) => ({
+    position: "relative",
+    borderRadius: theme.shape.borderRadius,
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    "&:hover": {
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
+    },
+    marginRight: theme.spacing(2),
+    marginLeft: 0,
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: theme.spacing(3),
+      width: "auto",
+    },
+  }));
+
+  const SearchIconWrapper = styled("div")(({ theme }) => ({
+    padding: theme.spacing(0, 2),
+    height: "100%",
+    position: "absolute",
+    pointerEvents: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }));
+
+  const StyledInputBase = styled(InputBase)(({ theme }) => ({
+    color: "inherit",
+    "& .MuiInputBase-input": {
+      padding: theme.spacing(1, 1, 1, 0),
+      // vertical padding + font size from searchIcon
+      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+      transition: theme.transitions.create("width"),
+      width: "100%",
+      [theme.breakpoints.up("md")]: {
+        width: "20ch",
+      },
+    },
+  }));
+
   const handleMenu = event => {
     setAnchorEl(event.currentTarget);
   };
@@ -51,6 +94,7 @@ function SwitchMode({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
       <Box>
         <AppBar position="static">
           <Toolbar>
@@ -59,14 +103,21 @@ function SwitchMode({ children }) {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2 }}
             >
               <MenuIcon />
             </IconButton>
-
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Photos
+            <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
+              SHOP BY CATEGORY
             </Typography>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
+              />
+            </Search>
             {auth && (
               <div>
                 <IconButton
@@ -83,7 +134,7 @@ function SwitchMode({ children }) {
                   id="menu-appbar"
                   anchorEl={anchorEl}
                   anchorOrigin={{
-                    vertical: "top",
+                    vertical: "bottom",
                     horizontal: "right",
                   }}
                   keepMounted
@@ -118,4 +169,4 @@ function SwitchMode({ children }) {
   );
 }
 
-export default SwitchMode;
+export default MenuBar;
