@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\E-Commerce  Projeto\\E-commerceApp\\E-commerceApp.csproj": {}
+    "C:\\workspace\\Ecommerce\\EcommerceApi\\EcommerceApi.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\E-Commerce  Projeto\\E-commerceApp\\E-commerceApp.csproj": {
+    "C:\\workspace\\Ecommerce\\EcommerceApi\\EcommerceApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\E-Commerce  Projeto\\E-commerceApp\\E-commerceApp.csproj",
-        "projectName": "E-commerceApp",
-        "projectPath": "C:\\workspace\\E-Commerce  Projeto\\E-commerceApp\\E-commerceApp.csproj",
+        "projectUniqueName": "C:\\workspace\\Ecommerce\\EcommerceApi\\EcommerceApi.csproj",
+        "projectName": "EcommerceApi",
+        "projectPath": "C:\\workspace\\Ecommerce\\EcommerceApi\\EcommerceApi.csproj",
         "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\E-Commerce  Projeto\\E-commerceApp\\obj\\",
+        "outputPath": "C:\\workspace\\Ecommerce\\EcommerceApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
