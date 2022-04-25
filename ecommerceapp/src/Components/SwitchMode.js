@@ -51,18 +51,6 @@ function SwitchMode({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
-        sx={{
-          display: "flex",
-          width: "100%",
-          alignItems: "flex-end",
-          justifyContent: "flex-end",
-          bgcolor: "background.default",
-          color: "text.primary",
-          borderRadius: 1,
-          p: 3,
-        }}
-      ></Box>
       <Box>
         <AppBar position="static">
           <Toolbar>
