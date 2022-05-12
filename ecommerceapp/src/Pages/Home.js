@@ -1,6 +1,7 @@
 import { Box } from "@mui/system";
 import React from "react";
 import ActionAreaCard from "../Components/cards.js";
+import Footer from "../Components/Footer.js";
 import ImageSlider from "../Components/ImageSlider/ImageSlider.js";
 import TEXT from "../Utils/texts.js";
 
@@ -66,6 +67,7 @@ function Home() {
           }
         />
       </Box>
+      <Footer />
     </Box>
   );
 }
