@@ -12,7 +12,6 @@ import {
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { Box } from "@mui/system";
-import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
@@ -21,6 +20,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import SwipeableTemporaryDrawer from "./Drawer";
 
 function MenuBar({ children }) {
   const [mode, setMode] = useState("light");
@@ -90,48 +90,21 @@ function MenuBar({ children }) {
     anchorEl == null ? setAnchorEl(event.currentTarget) : setAnchorEl(null);
   };
 
-  const handleMenu = event => {
-    menuAnchorEl == null
-      ? setMenuAnchorEl(event.currentTarget)
-      : setMenuAnchorEl(null);
-  };
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
       <Box>
-        <AppBar position="static">
+        <AppBar
+          position="static"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Toolbar>
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              onClick={handleMenu}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={menuAnchorEl}
-              anchorOrigin={{
-                vertical: "center",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(menuAnchorEl)}
-              onClose={handleMenu}
-            >
-              <MenuItem onClick={handleMenu}>Profile</MenuItem>
-              <MenuItem onClick={handleMenu}>My account</MenuItem>
-            </Menu>
+            <SwipeableTemporaryDrawer />
             <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
-              SHOP BY CATEGORY
+              Dev ECommerce
             </Typography>
             <Search>
               <SearchIconWrapper>
@@ -172,7 +145,7 @@ function MenuBar({ children }) {
                   <MenuItem onClick={handleLoginMenu}>My account</MenuItem>
                 </Menu>
                 <IconButton color="inherit">
-                  <Badge badgeContent={2} color="error">
+                  <Badge badgeContent={4} color="error">
                     <FavoriteIcon />
                   </Badge>
                 </IconButton>
