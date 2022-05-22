@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import MenuBar from "./Components/MenuBar";
+import { Box } from "@mui/system";
 
 function App() {
   return (

@@ -1,43 +1,71 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { SLIDER_DATA } from "../SliderData";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
+import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import "./ImageSlider.css";
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(0);
   const length = SLIDER_DATA.length;
-  const nextSlide = () => setCurrent(current === length - 1 ? 0 : current + 1);
-  const prevSlide = () => setCurrent(current === 0 ? length - 1 : current - 1);
+
+  useEffect(() => {
+    if (!Array.isArray(SLIDER_DATA) || SLIDER_DATA.length <= 0) return null;
+  }, []);
+
+  const handleNext = () => {
+    if (current === length - 1) {
+      setCurrent(0);
+    } else {
+      setCurrent(current + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (current === 0) {
+      setCurrent(length - 1);
+    } else {
+      setCurrent(current - 1);
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
-    }, 3000000);
+      handleNext();
+    }, 5000);
     return () => clearInterval(interval);
   }, [current]);
 
-  if (!Array.isArray(SLIDER_DATA) || SLIDER_DATA.length <= 0) return null;
-
   return (
-    <div className="slider-wrapper">
-      <ArrowBackIosIcon className="left-arrow" onClick={nextSlide} />
-      <div className="slider">
-        {SLIDER_DATA.map((slide, index) => {
+    <section className="slider-wrapper">
+      <div className="arrow  left-arrow" onClick={handlePrev}>
+        <ArrowBackIosNewOutlinedIcon />
+      </div>
+      <div
+        className="wrapper"
+        style={{
+          transform: `translateX(-${current * 100}vw)`,
+        }}
+      >
+        {SLIDER_DATA.map(item => {
           return (
-            <div
-              className={index === current ? "slide active" : "slide"}
-              key="index"
-            >
-              {index === current && (
-                <img src={slide.image} alt="slide" className="image" />
-              )}
+            <div key="index" className="slide">
+              <div className="img-container">
+                <img src={item.img} alt="img" />
+              </div>
+              <div className="info-container">
+                <h1 className="title">{item.title}</h1>
+                <p className="description">{item.desc}</p>
+                <button className="btn">Show now</button>
+              </div>
             </div>
           );
         })}
       </div>
-      <ArrowForwardIosIcon className="right-arrow" onClick={prevSlide} />
-    </div>
+
+      <div className="arrow right-arrow arrow" onClick={handleNext}>
+        <ArrowForwardIosOutlinedIcon />
+      </div>
+    </section>
   );
 };
 

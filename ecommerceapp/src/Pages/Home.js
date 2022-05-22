@@ -8,10 +8,7 @@ import TEXT from "../Utils/texts.js";
 function Home() {
   return (
     <Box>
-      <h1 style={{ marginLeft: "40px", marginTop: "20px" }}>Dev E-commerce</h1>
-      <Box>
-        <ImageSlider />
-      </Box>
+      <ImageSlider />
       <Box
         sx={{
           display: "flex",

@@ -1,91 +1,77 @@
 .slider-wrapper {
-  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  height: 400px;
-}
-.slider {
   position: relative;
-  width: 50%;
-  margin-top: 30px;
+  overflow: hidden;
 }
 
-.image {
-  width: 100%;
-  height: 300px;
+.arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
 }
 
 .left-arrow {
-  position: relative;
-  z-index: 10;
-  left: 20px;
-  top: 150px;
-  color: red;
-  cursor: pointer;
+  left: 10px;
+}
+.right-arrow {
+  right: 10px;
 }
 
-.right-arrow {
-  position: relative;
-  right: 20px;
-  top: 150px;
-  color: red;
-  cursor: pointer;
+.wrapper {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
 }
 
 .slide {
-  opacity: 0;
-  transition-duration: 1s ease;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.slide.active {
-  margin: 0 auto;
-  width: 70%;
-  height: 400px;
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
+.img-container {
+  height: 100%;
+  flex: 1;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+.info-container {
+  flex: 1;
+  padding: 50px;
 }
 
-@media (max-width: 768px) {
-  .slider {
-    width: 100%;
-  }
-  .image {
-    width: 100%;
-    height: 250px;
-  }
-  .slide {
-    width: 70%;
-  }
-  .slide.active {
-    width: 70%;
-  }
-  .left-arrow {
-    top: 130px;
-  }
-  .right-arrow {
-    top: 130px;
-  }
+.title {
+  font-size: 70px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .slider {
-    width: 100%;
-  }
-  .image {
-    width: 100%;
-    height: 300px;
-  }
-  .slide {
-    width: 70%;
-  }
-  .slide.active {
-    width: 70%;
-  }
-  .left-arrow {
-    top: 150px;
-  }
-  .right-arrow {
-    top: 150px;
-  }
+.description {
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  height: 80%;
 }

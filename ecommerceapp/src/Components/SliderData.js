@@ -1,23 +1,40 @@
 export const SLIDER_DATA = [
-    {
-        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
-    },
-    {
-        image: 'https://images.unsplash.com/photo-1585155770447-2f66e2a397b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80'
-    }
-]
+  {
+    id: 2,
+    img: "https://i.ibb.co/vj5zjtV/2.png",
+    title: "AUTUMN COLLECTION",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fcf1ed",
+  },
+  {
+    id: 3,
+    img: "https://i.ibb.co/cXFnLLV/3.png",
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fbf0f4",
+  },
+
+  {
+    id: 3,
+    img: "https://i.ibb.co/x2cYznP/d0501b081317429dc949acdb13451033.jpg",
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fbf0f4",
+  },
+  {
+    id: 3,
+    img: "https://i.pinimg.com/564x/a4/c7/98/a4c7987efbcf651f82ebb9cd333a355b.jpg",
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fbf0f4",
+  },
+  {
+    id: 3,
+    img: "https://ph-cdn1.ecosweb.com.br/imagens01/foto/moda-feminina/sobretudo/sobretudo-com-bolsos-preto_345707_1000_1.jpg",
+    title: "LOUNGEWEAR LOVE",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: "fbf0f4",
+  },
+];
+
+export const sliderItems = [];

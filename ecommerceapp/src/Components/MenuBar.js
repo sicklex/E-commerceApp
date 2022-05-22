@@ -25,31 +25,14 @@ import SearchBar from "./Menu components/SearchBar";
 function MenuBar({ children }) {
   const [mode, setMode] = useState("light");
   const [anchorEl, setAnchorEl] = useState(null);
-  const colorMode = useMemo(
-    () => ({
-      toggleColorMode: () => {
-        setMode(prevMode => (prevMode === "light" ? "dark" : "light"));
-      },
-    }),
-    []
-  );
 
-  const theme = useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode,
-        },
-      }),
-    [mode]
-  );
   const handleLoginMenu = event => {
     anchorEl == null ? setAnchorEl(event.currentTarget) : setAnchorEl(null);
   };
   const isActive = useMediaQuery("(min-width:675px)");
   const test = useMediaQuery("(min-width:600px)");
   return (
-    <ThemeProvider theme={theme}>
+    <Box>
       <CssBaseline />
       <Box>
         <AppBar
@@ -57,6 +40,7 @@ function MenuBar({ children }) {
           sx={{
             display: "flex",
             justifyContent: "center",
+            backgroundColor: "coral",
           }}
         >
           <Toolbar>
@@ -71,7 +55,7 @@ function MenuBar({ children }) {
               <Icon></Icon>
             ) : (
               <>
-                <MenuIcon onClick={handleLoginMenu}></MenuIcon>
+                <MenuIcon onClick={handleLoginMenu} />
                 <Menu
                   id="login-appbar"
                   anchorEl={anchorEl}
@@ -103,22 +87,11 @@ function MenuBar({ children }) {
                 </Menu>
               </>
             )}
-            <IconButton
-              sx={{ ml: 2 }}
-              onClick={colorMode.toggleColorMode}
-              color="inherit"
-            >
-              {theme.palette.mode === "dark" ? (
-                <Brightness7Icon />
-              ) : (
-                <Brightness4Icon />
-              )}
-            </IconButton>
           </Toolbar>
         </AppBar>
       </Box>
       {children}
-    </ThemeProvider>
+    </Box>
   );
 }
 
