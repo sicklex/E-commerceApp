@@ -4,9 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import TEXT from "../Utils/texts";
 
-export default function ActionAreaCard({ text, image, title }) {
+export default function ActionAreaCard({ text, image, title, ...props }) {
   let textLeng = text => {
     if (text.length > 200) return text.substring(0, 200) + "...";
   };

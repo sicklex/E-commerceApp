@@ -3,31 +3,28 @@ import {
   createTheme,
   ThemeProvider,
   CssBaseline,
-  IconButton,
   AppBar,
   Toolbar,
   Typography,
-  Badge,
+  IconButton,
+  Menu,
+  MenuItem,
 } from "@mui/material";
+import { Box } from "@mui/system";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { Box } from "@mui/system";
+import SwipeableTemporaryDrawer from "./Drawer";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import MenuIcon from "@mui/icons-material/Menu";
+import Icon from "./Menu components/Icon";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import { styled, alpha } from "@mui/material/styles";
-import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import SwipeableTemporaryDrawer from "./Drawer";
+import SearchBar from "./Menu components/SearchBar";
 
 function MenuBar({ children }) {
   const [mode, setMode] = useState("light");
-  const [auth, setAuth] = useState(true);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -46,50 +43,11 @@ function MenuBar({ children }) {
       }),
     [mode]
   );
-
-  const Search = styled("div")(({ theme }) => ({
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    "&:hover": {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(3),
-      width: "auto",
-    },
-  }));
-
-  const SearchIconWrapper = styled("div")(({ theme }) => ({
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  }));
-
-  const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: "inherit",
-    "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 0),
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create("width"),
-      width: "100%",
-      [theme.breakpoints.up("md")]: {
-        width: "20ch",
-      },
-    },
-  }));
-
   const handleLoginMenu = event => {
     anchorEl == null ? setAnchorEl(event.currentTarget) : setAnchorEl(null);
   };
-
+  const isActive = useMediaQuery("(min-width:675px)");
+  const test = useMediaQuery("(min-width:600px)");
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -103,29 +61,17 @@ function MenuBar({ children }) {
         >
           <Toolbar>
             <SwipeableTemporaryDrawer />
-            <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
-              Dev ECommerce
-            </Typography>
-            <Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-            {auth && (
-              <div>
-                <IconButton
-                  size="large"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleLoginMenu}
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton>
+            {test && (
+              <Typography variant="h7" component="div" sx={{ flexGrow: 1 }}>
+                Dev ECommerce
+              </Typography>
+            )}
+            <SearchBar />
+            {isActive ? (
+              <Icon></Icon>
+            ) : (
+              <>
+                <MenuIcon onClick={handleLoginMenu}></MenuIcon>
                 <Menu
                   id="login-appbar"
                   anchorEl={anchorEl}
@@ -141,32 +87,33 @@ function MenuBar({ children }) {
                   open={Boolean(anchorEl)}
                   onClose={handleLoginMenu}
                 >
-                  <MenuItem onClick={handleLoginMenu}>Profile</MenuItem>
-                  <MenuItem onClick={handleLoginMenu}>My account</MenuItem>
-                </Menu>
-                <IconButton color="inherit">
-                  <Badge badgeContent={4} color="error">
+                  <MenuItem onClick={handleLoginMenu}>
+                    <AccountCircle />
+                    Login
+                  </MenuItem>
+                  <MenuItem onClick={handleLoginMenu}>
+                    {" "}
                     <FavoriteIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton color="inherit">
-                  <Badge badgeContent={4} color="error">
+                    Favorites
+                  </MenuItem>
+                  <MenuItem onClick={handleLoginMenu}>
                     <ShoppingCartIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  sx={{ ml: 2 }}
-                  onClick={colorMode.toggleColorMode}
-                  color="inherit"
-                >
-                  {theme.palette.mode === "dark" ? (
-                    <Brightness7Icon />
-                  ) : (
-                    <Brightness4Icon />
-                  )}
-                </IconButton>
-              </div>
+                    Cards
+                  </MenuItem>
+                </Menu>
+              </>
             )}
+            <IconButton
+              sx={{ ml: 2 }}
+              onClick={colorMode.toggleColorMode}
+              color="inherit"
+            >
+              {theme.palette.mode === "dark" ? (
+                <Brightness7Icon />
+              ) : (
+                <Brightness4Icon />
+              )}
+            </IconButton>
           </Toolbar>
         </AppBar>
       </Box>
