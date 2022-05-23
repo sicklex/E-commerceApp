@@ -8,7 +8,7 @@ import {
 import { Box } from "@mui/system";
 import React from "react";
 import Center from "../Components/Center";
-import useForm from "../Hooks/UserForm";
+import useForm from "../Hooks/useForm";
 
 const getFreshModel = () => ({
   Password: "",

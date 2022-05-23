@@ -1,8 +1,27 @@
 import { Button, TextField, Typography } from "@mui/material";
-import { Box, display } from "@mui/system";
+import { Box } from "@mui/system";
 import React from "react";
+import { ToastContainer, toast, ToastContainerProps } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Newsletter() {
+  const [email, setEmail] = React.useState("");
+  const [subscribed, setSubscribed] = React.useState(false);
+
+  const isValidEmail = email => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (isValidEmail(email)) {
+      setSubscribed(true);
+      toast.success("Subscribed Successfully");
+    } else {
+      toast.error("Invalid Email");
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -46,12 +65,19 @@ function Newsletter() {
             justifyContent: "space-between",
             "@media screen and (max-width: 600px)": {
               width: "80%",
+              ml: "20px",
             },
           }}
         >
-          <TextField label="Email" variant="outlined" fullWidth />
+          <TextField
+            label="Email"
+            variant="outlined"
+            fullWidth
+            onChange={e => setEmail(e.target.value)}
+          />
           <Button
             variant="contained"
+            onClick={handleSubmit}
             sx={{
               border: "none",
               backgroundColor: "teal",
@@ -65,6 +91,15 @@ function Newsletter() {
           >
             Subscribe
           </Button>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            pauseOnHover
+          />
         </Box>
       </Box>
     </Box>

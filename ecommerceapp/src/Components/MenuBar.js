@@ -1,18 +1,14 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import {
-  createTheme,
-  ThemeProvider,
   CssBaseline,
   AppBar,
   Toolbar,
   Typography,
-  IconButton,
   Menu,
   MenuItem,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+
 import SwipeableTemporaryDrawer from "./Drawer";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -23,7 +19,6 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchBar from "./Menu components/SearchBar";
 
 function MenuBar({ children }) {
-  const [mode, setMode] = useState("light");
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleLoginMenu = event => {
