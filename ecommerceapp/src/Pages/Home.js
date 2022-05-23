@@ -5,24 +5,15 @@ import Footer from "../Components/Footer.js";
 import ImageSlider from "../Components/ImageSlider/ImageSlider.js";
 import TEXT from "../Utils/texts.js";
 import Categories from "../Components/Categories";
+import Newsletter from "../Components/Newsletter.js";
 
 function Home() {
   return (
     <Box>
       <ImageSlider />
       <Categories />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "60px",
-          width: "100%",
-        }}
-      >
-        <Cards />
-      </Box>
+      <Cards />
+      <Newsletter />
       <Footer />
     </Box>
   );

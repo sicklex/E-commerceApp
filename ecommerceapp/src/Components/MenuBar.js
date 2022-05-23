@@ -76,7 +76,6 @@ function MenuBar({ children }) {
                     Login
                   </MenuItem>
                   <MenuItem onClick={handleLoginMenu}>
-                    {" "}
                     <FavoriteIcon />
                     Favorites
                   </MenuItem>

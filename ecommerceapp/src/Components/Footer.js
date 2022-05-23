@@ -2,12 +2,12 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
 import { Box } from "@mui/system";
 import { List, ListItem, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 function Footer() {
   const ListItemContainer = ({ children }) => (
@@ -17,6 +17,7 @@ function Footer() {
         p: 0,
         m: 0,
         mb: 2,
+        cursor: "pointer",
       }}
     >
       {children}
