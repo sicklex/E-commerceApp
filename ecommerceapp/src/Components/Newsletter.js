@@ -1,12 +1,11 @@
 import { Button, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { ToastContainer, toast, ToastContainerProps } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Newsletter() {
   const [email, setEmail] = React.useState("");
-  const [subscribed, setSubscribed] = React.useState(false);
 
   const isValidEmail = email => {
     return /\S+@\S+\.\S+/.test(email);
@@ -14,12 +13,9 @@ function Newsletter() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (isValidEmail(email)) {
-      setSubscribed(true);
-      toast.success("Subscribed Successfully");
-    } else {
-      toast.error("Invalid Email");
-    }
+    isValidEmail(email)
+      ? toast.success("Subscribed Successfully")
+      : toast.error("Invalid Email");
   };
 
   return (

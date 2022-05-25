@@ -3,7 +3,6 @@ import React from "react";
 import Cards from "../Components/Cards.js";
 import Footer from "../Components/Footer.js";
 import ImageSlider from "../Components/ImageSlider/ImageSlider.js";
-import TEXT from "../Utils/texts.js";
 import Categories from "../Components/Categories";
 import Newsletter from "../Components/Newsletter.js";
 

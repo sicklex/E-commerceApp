@@ -4,13 +4,10 @@ import React from "react";
 import { categories } from "./SliderData";
 
 function Categories() {
-  // image media queries
-  const imageMediaQuery = {
-    "@media (max-width: 800px)": {
-      height: "20vh",
-    },
+  const handleClick = e => {
+    e.preventDefault();
+    console.log(e.target.id);
   };
-
   return (
     <Box
       sx={{
@@ -77,6 +74,8 @@ function Categories() {
                   cursor: "pointer",
                   fontWeight: "bold",
                 }}
+                className={`${item.value}`}
+                onClick={handleClick}
               >
                 SHOP NOW
               </Button>

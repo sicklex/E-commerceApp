@@ -4,19 +4,8 @@ import { popularProducts } from "./SliderData";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { jssPreset, StylesProvider, makeStyles } from "@mui/styles";
 
 export default function Cards({ text, image, title, ...props }) {
-  let textLeng = text => {
-    if (text.length > 200) return text.substring(0, 200) + "...";
-  };
-
-  const IconStyle = makeStyles({
-    root: `
-    
-    `,
-  });
-
   return (
     <Box
       sx={{
