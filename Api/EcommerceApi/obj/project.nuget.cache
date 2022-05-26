@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9KQbcxIRYExXR4P7pNaqpELsoy9PUK6fShvhmfu4+hkz3KTcJA8VgICTaFBwNhOdjQLAkrtyJV2JEp5SL5fY9A==",
+  "dgSpecHash": "v76n3ocnQXgUcB/T1WXIgLoXdQDQVNyaNgeZT4tbq06pA/ZpukcIOnZMiHqk5HJZGCTYOnzHbRtOARNtDxUr8Q==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\EcommerceApi\\Ecommerce.EFCoreApi.Api.csproj",
+  "projectFilePath": "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\Ecommerce.EFCoreApi.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\clayd\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\clayd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
