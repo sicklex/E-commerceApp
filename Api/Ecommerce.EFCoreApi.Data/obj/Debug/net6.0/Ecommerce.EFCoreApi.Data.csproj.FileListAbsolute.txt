@@ -1,0 +1,17 @@
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.AssemblyReference.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.AssemblyInfoInputs.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.AssemblyInfo.cs
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.CoreCompileInputs.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.deps.json
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.runtimeconfig.json
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.pdb
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.pdb
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.CopyComplete
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\refint\Ecommerce.EFCoreApi.Data.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.pdb
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.genruntimeconfig.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Data.dll

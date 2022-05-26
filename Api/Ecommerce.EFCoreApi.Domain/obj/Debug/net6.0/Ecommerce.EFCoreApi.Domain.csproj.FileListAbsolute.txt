@@ -1,0 +1,12 @@
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.deps.json
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.pdb
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.csproj.AssemblyReference.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.AssemblyInfoInputs.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.AssemblyInfo.cs
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.csproj.CoreCompileInputs.cache
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\refint\Ecommerce.EFCoreApi.Domain.dll
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\Ecommerce.EFCoreApi.Domain.pdb
+C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Domain\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Domain.dll
