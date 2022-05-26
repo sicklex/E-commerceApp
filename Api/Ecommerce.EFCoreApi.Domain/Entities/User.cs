@@ -12,6 +12,6 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public int Telephone { get; set; }
         public DateTime Created_at { get; set; }
 
-
+        public ICollection<UserAddress> UserAddresses { get; set; }
     }
 }
