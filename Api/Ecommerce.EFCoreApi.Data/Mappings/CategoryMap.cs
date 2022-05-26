@@ -1,7 +1,7 @@
 ﻿using Ecommerce.EFCoreApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-namespace EcommerceData.mappings
+namespace EcommerceData.EFCoreApi.Data.Mappings
 {
     public class CategoryMap : IEntityTypeConfiguration<Categories>
     {
@@ -14,7 +14,6 @@ namespace EcommerceData.mappings
             builder.Property(p => p.Name)
                 .HasColumnType("varchar(255)")
                 .IsRequired();
-
         }
     }
 }

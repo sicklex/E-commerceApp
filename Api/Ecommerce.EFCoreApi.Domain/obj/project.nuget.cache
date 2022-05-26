@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AL6j1OunzQjLduGkxsYCjJBYNLiW2509ZGddn6IFEsi70MaztEONbFwJKD+bkoTEQlGnd6FNv7U8qmwiswRLbw==",
+  "dgSpecHash": "UDlf0WtPylmuosDA+0HuD84BSR3lgiiFQNR9+EJWv2waCrCCV5W4EGV9m6SeOyRzjqWUaS0dJDyXY+0ptB95Rw==",
   "success": true,
-  "projectFilePath": "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
+  "projectFilePath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

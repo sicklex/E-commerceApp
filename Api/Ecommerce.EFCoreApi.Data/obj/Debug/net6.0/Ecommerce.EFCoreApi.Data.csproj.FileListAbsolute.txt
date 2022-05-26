@@ -15,3 +15,20 @@ C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\
 C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.pdb
 C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.genruntimeconfig.cache
 C:\workspace\FullSTack APP\quiz\EcommerceApi\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Data.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.deps.json
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.runtimeconfig.json
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Data.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.AssemblyReference.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.AssemblyInfoInputs.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.AssemblyInfo.cs
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.CoreCompileInputs.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.csproj.CopyComplete
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\refint\Ecommerce.EFCoreApi.Data.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\Ecommerce.EFCoreApi.Data.genruntimeconfig.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Data\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Data.dll

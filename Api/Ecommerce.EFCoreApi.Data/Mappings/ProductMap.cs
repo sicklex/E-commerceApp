@@ -1,17 +1,13 @@
-﻿using Ecommerce.EFCoreApi.Domain.Entities;
+using Ecommerce.EFCoreApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Ecommerce.EFCoreApi.Data.Mappings
 {
-    public  class ProductMap : IEntityTypeConfiguration<Product>
+    public class ProductMap : IEntityTypeConfiguration<Product>
     {
-        public void Configure (EntityTypeBuilder<Product> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.ToTable("Products");
 
@@ -22,26 +18,31 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
                 .IsRequired();
 
             builder.Property(p => p.Description)
-                .HasColumnType("varchar(255)")
+                .HasColumnType("Text")
                 .IsRequired();
 
             builder.Property(p => p.Price)
                 .HasColumnType("decimal(18,2)")
                 .IsRequired();
 
-            builder.Property(p => p.ImageURL)
-                .HasColumnType("varchar(255)")
-                .IsRequired();
-
-            builder.Property(p => p.Quantities)
-                .HasColumnType("int")
-                .IsRequired();
-
-
             builder.Property(p => p.Product_Sku)
-                .HasColumnType("int")
+                .HasColumnType("varchar(50)")
                 .IsRequired();
 
+            builder.HasOne(p => p.Categories)
+                .WithMany(c => c.Products)
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.HasOne(p => p.Inventory)
+                .WithOne(pi => pi.Product)
+                .HasForeignKey<Product>(pi => pi.InventoryId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.HasOne(p => p.Discount)
+                .WithMany(d => d.Products)
+                .HasForeignKey(p => p.Discount_id)
+                .IsRequired(false);
         }
     }
 }

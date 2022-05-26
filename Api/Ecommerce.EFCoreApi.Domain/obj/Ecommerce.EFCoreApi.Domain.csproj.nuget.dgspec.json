@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {}
+    "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {
+    "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
+        "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
         "projectName": "Ecommerce.EFCoreApi.Domain",
-        "projectPath": "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
+        "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj",
         "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\FullSTack APP\\quiz\\EcommerceApi\\Ecommerce.EFCoreApi.Domain\\obj\\",
+        "outputPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
