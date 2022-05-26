@@ -132,6 +132,41 @@ namespace Ecommerce.EFCoreApi.Data.migrations
                     b.ToTable("ProductInventories", (string)null);
                 });
 
+            modelBuilder.Entity("Ecommerce.EFCoreApi.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created_at")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("Telephone")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", (string)null);
+                });
+
             modelBuilder.Entity("Ecommerce.EFCoreApi.Domain.Entities.Product", b =>
                 {
                     b.HasOne("Ecommerce.EFCoreApi.Domain.Entities.Categories", "Categories")
