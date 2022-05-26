@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "EDFivEGTqFwlMp0cHC2e+DOcarfmmHCKncVfTsgFM3U=",
+  "Source": "Ecommerce.EFCoreApi.Api",
+  "BasePath": "_content/Ecommerce.EFCoreApi.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
