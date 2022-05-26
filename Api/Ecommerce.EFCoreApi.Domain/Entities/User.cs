@@ -14,5 +14,6 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
 
         public ICollection<UserAddress> UserAddresses { get; set; }
         public ICollection<UserPayment> UserPayments { get; set; }
+        public virtual Session Session { get; set; }
     }
 }
