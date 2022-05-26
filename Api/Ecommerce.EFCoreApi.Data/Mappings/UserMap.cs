@@ -34,6 +34,7 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
             builder.Property(p => p.Created_at)
                 .HasColumnType("datetime")
                 .IsRequired();
+
         }
     }
 }

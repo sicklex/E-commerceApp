@@ -13,5 +13,6 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public DateTime Created_at { get; set; }
 
         public ICollection<UserAddress> UserAddresses { get; set; }
+        public ICollection<UserPayment> UserPayments { get; set; }
     }
 }

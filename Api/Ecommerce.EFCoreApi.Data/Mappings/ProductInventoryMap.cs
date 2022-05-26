@@ -26,10 +26,6 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
                 .HasColumnType("datetime")
                 .IsRequired();
 
-
-            builder.HasOne(p => p.Product)
-                .WithOne(pi => pi.Inventory)
-                .HasForeignKey<ProductInventory>(pi => pi.Id);
         }
     }
 }
