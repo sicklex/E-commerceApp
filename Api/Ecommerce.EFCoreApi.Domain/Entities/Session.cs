@@ -9,6 +9,6 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public DateTime Created_At { get; set; }
         public DateTime Modified_At { get; set; }
         public User User { get; set; }
-
+        public ICollection<Cart> Carts { get; set; }
     }
 }

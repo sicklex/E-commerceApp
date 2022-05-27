@@ -32,7 +32,6 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
                 .WithOne(x => x.Session)
                 .HasForeignKey<Session>(x => x.User_Id)
                 .OnDelete(DeleteBehavior.NoAction);
-
         }
     }
 }

@@ -4,6 +4,7 @@ using Ecommerce.EFCoreApi.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ecommerce.EFCoreApi.Data.migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20220527142929_adcionando_Cart")]
+    partial class adcionando_Cart
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,7 +54,7 @@ namespace Ecommerce.EFCoreApi.Data.migrations
 
                     b.HasIndex("Session_Id");
 
-                    b.ToTable("Cart", (string)null);
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("Ecommerce.EFCoreApi.Domain.Entities.Categories", b =>
@@ -97,35 +99,6 @@ namespace Ecommerce.EFCoreApi.Data.migrations
                     b.HasKey("Id");
 
                     b.ToTable("Discounts", (string)null);
-                });
-
-            modelBuilder.Entity("Ecommerce.EFCoreApi.Domain.Entities.PaymentDetails", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Created_At")
-                        .HasColumnType("datetime");
-
-                    b.Property<DateTime>("Modified_At")
-                        .HasColumnType("datetime");
-
-                    b.Property<int>("Order_id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Provider")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Payment Details", (string)null);
                 });
 
             modelBuilder.Entity("Ecommerce.EFCoreApi.Domain.Entities.Product", b =>
