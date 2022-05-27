@@ -30,8 +30,6 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
             builder.HasOne(p => p.Product)
                 .WithOne(p => p.OrderItems)
                 .HasForeignKey<OrderItems>(p => p.Product_Id);
-
-
         }
     }
 }

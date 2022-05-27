@@ -20,6 +20,5 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public virtual PaymentDetails PaymentDetails { get; set; }
 
         public virtual ICollection<OrderItems> OrderItems { get; set; }
-
     }
 }
