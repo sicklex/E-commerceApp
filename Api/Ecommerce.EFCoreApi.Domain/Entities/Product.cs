@@ -16,8 +16,8 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public virtual ProductInventory Inventory { get; set; }
         public virtual Categories Categories { get; set; }
         public virtual Discount Discount { get; set; }
-
         public virtual Cart Cart { get; set; }
+        public virtual OrderItems OrderItems { get; set; }
 
     }
 }
