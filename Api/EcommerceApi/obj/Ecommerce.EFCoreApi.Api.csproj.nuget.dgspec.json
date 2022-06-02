@@ -1,9 +1,67 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\Ecommerce.EFCoreApi.Api.csproj": {}
+    "D:\\workspace\\Ecommerce\\Api\\EcommerceApi\\Ecommerce.EFCoreApi.Api.csproj": {}
   },
   "projects": {
+    "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj",
+        "projectName": "Ecommerce.EFCoreApi.Application",
+        "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj",
+        "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -142,14 +200,14 @@
         }
       }
     },
-    "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\Ecommerce.EFCoreApi.Api.csproj": {
+    "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\Ecommerce.EFCoreApi.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\Ecommerce.EFCoreApi.Api.csproj",
-        "projectName": "Ecommerce.EFCoreApi.Api",
-        "projectPath": "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\Ecommerce.EFCoreApi.Api.csproj",
+        "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\Ecommerce.EFCoreApi.Identity.csproj",
+        "projectName": "Ecommerce.EFCoreApi.Identity",
+        "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\Ecommerce.EFCoreApi.Identity.csproj",
         "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\Ecommerce\\Api\\EcommerceAPi\\obj\\",
+        "outputPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,11 +224,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj": {
-                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj"
-              },
-              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {
-                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj"
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj"
               }
             }
           }
@@ -185,6 +240,103 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\workspace\\Ecommerce\\Api\\EcommerceApi\\Ecommerce.EFCoreApi.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\EcommerceApi\\Ecommerce.EFCoreApi.Api.csproj",
+        "projectName": "Ecommerce.EFCoreApi.Api",
+        "projectPath": "D:\\workspace\\Ecommerce\\Api\\EcommerceApi\\Ecommerce.EFCoreApi.Api.csproj",
+        "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\Ecommerce\\Api\\EcommerceApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Application\\Ecommerce.EFCoreApi.Application.csproj"
+              },
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj"
+              },
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Domain\\Ecommerce.EFCoreApi.Domain.csproj"
+              },
+              "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\Ecommerce.EFCoreApi.Identity.csproj": {
+                "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Identity\\Ecommerce.EFCoreApi.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"

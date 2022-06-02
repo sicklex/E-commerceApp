@@ -6279,11 +6279,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj",
+      "projectUniqueName": "d:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj",
       "projectName": "Ecommerce.EFCoreApi.Data",
-      "projectPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj",
+      "projectPath": "d:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\Ecommerce.EFCoreApi.Data.csproj",
       "packagesPath": "C:\\Users\\clayd\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\obj\\",
+      "outputPath": "d:\\workspace\\Ecommerce\\Api\\Ecommerce.EFCoreApi.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\clayd\\AppData\\Roaming\\NuGet\\NuGet.Config",

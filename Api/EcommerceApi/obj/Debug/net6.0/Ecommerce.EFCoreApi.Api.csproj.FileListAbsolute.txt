@@ -131,3 +131,15 @@ D:\workspace\Ecommerce\Api\EcommerceApi\obj\Debug\net6.0\refint\Ecommerce.EFCore
 D:\workspace\Ecommerce\Api\EcommerceApi\obj\Debug\net6.0\Ecommerce.EFCoreApi.Api.pdb
 D:\workspace\Ecommerce\Api\EcommerceApi\obj\Debug\net6.0\Ecommerce.EFCoreApi.Api.genruntimeconfig.cache
 D:\workspace\Ecommerce\Api\EcommerceApi\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Api.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Ecommerce.EFCoreApi.Identity.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Ecommerce.EFCoreApi.Identity.pdb
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Ecommerce.EFCoreApi.Application.dll
+D:\workspace\Ecommerce\Api\EcommerceApi\bin\Debug\net6.0\Ecommerce.EFCoreApi.Application.pdb

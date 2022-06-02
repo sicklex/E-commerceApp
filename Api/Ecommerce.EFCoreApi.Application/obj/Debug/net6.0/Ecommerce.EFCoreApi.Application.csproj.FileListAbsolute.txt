@@ -1,0 +1,15 @@
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.csproj.AssemblyReference.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.AssemblyInfoInputs.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.AssemblyInfo.cs
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.csproj.CoreCompileInputs.cache
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\bin\Debug\net6.0\Ecommerce.EFCoreApi.Application.deps.json
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\bin\Debug\net6.0\Ecommerce.EFCoreApi.Application.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\bin\Debug\net6.0\Ecommerce.EFCoreApi.Application.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\bin\Debug\net6.0\Ecommerce.EFCoreApi.Domain.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.csproj.CopyComplete
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\refint\Ecommerce.EFCoreApi.Application.dll
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\Ecommerce.EFCoreApi.Application.pdb
+D:\workspace\Ecommerce\Api\Ecommerce.EFCoreApi.Application\obj\Debug\net6.0\ref\Ecommerce.EFCoreApi.Application.dll

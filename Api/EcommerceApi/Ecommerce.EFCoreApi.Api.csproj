@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5"/>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -24,6 +26,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Ecommerce.EFCoreApi.Domain\Ecommerce.EFCoreApi.Domain.csproj" />
 		<ProjectReference Include="..\Ecommerce.EFCoreApi.Data\Ecommerce.EFCoreApi.Data.csproj" />
+    <ProjectReference Include="..\Ecommerce.EFCoreApi.Identity\Ecommerce.EFCoreApi.Identity.csproj"/>
+    <ProjectReference Include="..\Ecommerce.EFCoreApi.Application\Ecommerce.EFCoreApi.Application.csproj"/>
 	</ItemGroup>
-
 </Project>

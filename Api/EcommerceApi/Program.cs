@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.EFCoreApi.Data.Context;
+using Ecommerce.EFCoreApi.Identity.Data;
+using Microsoft.AspNetCore.Identity;
+using Ecommerce.EFCoreApi.Application.Interfaces.Services;
+using Ecommerce.EFCoreApi.Identity.Services;
+using EcommerceApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +18,22 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+
+builder.Services.AddDbContext<IdentityDataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
+
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<IdentityDataContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IIdentityService, IdentityService>();
+
+// add authentication with jwt from another file
+
+builder.Services.AddAuthentication(builder.Configuration);
+
 
 var app = builder.Build();
 

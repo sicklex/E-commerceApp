@@ -22,6 +22,5 @@ namespace Ecommerce.EFCoreApi.Data.Context
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Categories> Categories { get; set; }
-
     }
 }
