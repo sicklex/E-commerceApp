@@ -1,8 +1,8 @@
 using DevInHouse.EFCoreApi.Core.Entities;
 
-namespace Ecommerce.EFCoreApi.Domain.Interfaces.Repositories.Shared
+namespace Ecommerce.EFCoreApi.Domain.Interfaces.Services.Shared
 {
-    public interface IRepositoryBase<TEntity> : IDisposable where TEntity : Entity
+    public interface IServiceBase<TEntity> : IDisposable where TEntity : Entity
     {
         Task<IEnumerable<TEntity>> GetAllAsync();
 
