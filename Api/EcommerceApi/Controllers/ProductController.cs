@@ -24,6 +24,5 @@ namespace EcommerceApi.Controllers
             var productResponses = products.Select(p => ProductResponse.ToDTO(p));
             return Ok(productResponses);
         }
-
     }
 }

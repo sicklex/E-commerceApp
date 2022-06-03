@@ -1,6 +1,6 @@
-﻿namespace DevInHouse.EFCoreApi.Core.Entities
+﻿namespace Ecommerce.EFCoreApi.Domain.Entities.Shared
 {
-    public class Entity
+    public abstract class Entity
     {
         public int Id { get; protected set; }
     }

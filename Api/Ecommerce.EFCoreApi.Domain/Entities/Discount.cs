@@ -1,6 +1,4 @@
-using DevInHouse.EFCoreApi.Core.Entities;
-
-
+using Ecommerce.EFCoreApi.Domain.Entities.Shared;
 namespace Ecommerce.EFCoreApi.Domain.Entities
 {
     public class Discount : Entity

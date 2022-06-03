@@ -1,6 +1,5 @@
-﻿using DevInHouse.EFCoreApi.Core.Entities;
-
-
+﻿
+using Ecommerce.EFCoreApi.Domain.Entities.Shared;
 namespace Ecommerce.EFCoreApi.Domain.Entities
 {
     public class Product : Entity
@@ -20,5 +19,6 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public virtual Discount Discount { get; set; }
         public virtual Cart Cart { get; set; }
         public virtual OrderItems OrderItems { get; set; }
+
     }
 }

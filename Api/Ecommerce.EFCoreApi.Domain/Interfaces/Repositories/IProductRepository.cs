@@ -3,5 +3,7 @@ using Ecommerce.EFCoreApi.Domain.Interfaces.Repositories.Shared;
 
 namespace Ecommerce.EFCoreApi.Domain.Interfaces.Repositories
 {
-    public interface IProductRepository : IRepositoryBase<Product> { }
+    public interface IProductRepository : IRepositoryBase<Product>
+    {
+    }
 }

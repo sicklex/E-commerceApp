@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Identity;
 using Ecommerce.EFCoreApi.Application.Interfaces.Services;
 using Ecommerce.EFCoreApi.Identity.Services;
 using EcommerceApi.Extensions;
+using Ecommerce.EFCoreApi.Domain.Interfaces.Services;
+using Ecommerce.EFCoreApi.Domain.Services;
+using Ecommerce.EFCoreApi.Domain.Interfaces.Repositories;
+using Ecommerce.EFCoreApi.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,15 +33,16 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IIdentityService, IdentityService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 
 // add authentication with jwt from another file
-
 builder.Services.AddAuthentication(builder.Configuration);
 
 
+
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -45,6 +50,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
