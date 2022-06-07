@@ -1,11 +1,12 @@
 using Ecommerce.EFCoreApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Ecommerce.EFCoreApi.Data.Mappings
 {
     public class DiscountMap : IEntityTypeConfiguration<Discount>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Discount> builder)
+        public void Configure(EntityTypeBuilder<Discount> builder)
         {
             builder.ToTable("Discounts");
 

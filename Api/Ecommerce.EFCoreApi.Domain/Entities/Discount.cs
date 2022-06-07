@@ -10,7 +10,7 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
 
         public DateTime Created_at { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public ICollection<Product> Products { get; set; }
 
     }
 }

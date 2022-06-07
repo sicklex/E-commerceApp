@@ -41,8 +41,7 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
 
             builder.HasOne(p => p.Discount)
                 .WithMany(d => d.Products)
-                .HasForeignKey(p => p.Discount_id)
-                .IsRequired(false);
+                .HasForeignKey(p => p.DiscountId);
         }
     }
 }

@@ -15,16 +15,21 @@ namespace Ecommerce.EFCoreApi.Application.DTOs.Request
 
         public decimal Price { get; set; }
 
+        public int Discount_id { get; set; }
 
-        public PostProductRequest(string product_Sku, int categoryId, string name, string description, decimal price)
+        public int InventoryId { get; set; }
+
+
+        public PostProductRequest(string product_Sku, int inventoryId, int categoryId, string name, string description, decimal price, int discount_id)
         {
             Product_Sku = product_Sku;
             CategoryId = categoryId;
             Name = name;
             Description = description;
             Price = price;
+            Discount_id = discount_id;
+            InventoryId = inventoryId;
         }
-
 
         public static Product ToEntity(PostProductRequest request)
         {

@@ -35,13 +35,12 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
 builder.Services.AddScoped<IIdentityService, IdentityService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
+builder.Services.AddScoped<IDiscountService, DiscountService>();
 
 
 // add authentication with jwt from another file
 builder.Services.AddAuthentication(builder.Configuration);
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

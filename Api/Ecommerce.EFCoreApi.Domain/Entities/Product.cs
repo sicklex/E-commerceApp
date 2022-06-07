@@ -10,7 +10,7 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public int CategoryId { get; set; }
         public int InventoryId { get; set; }
         public decimal Price { get; set; }
-        public int Discount_id { get; set; }
+        public int DiscountId { get; set; }
         public DateTime Created_At { get; set; }
 
 

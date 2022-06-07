@@ -20,17 +20,14 @@ namespace Ecommerce.EFCoreApi.Domain.Services.Shared
             throw new NotImplementedException();
         }
 
-        public void Dispose() => _repositoryBase.Dispose();
+        public virtual async Task<TEntity> GetByIdAsync(int id) => await _repositoryBase.GetByIdAsync(id);
 
-
-        public Task<TEntity> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
 
         public Task<TEntity> UpdateAsync(TEntity entity)
         {
             throw new NotImplementedException();
         }
+
+        public void Dispose() => _repositoryBase.Dispose();
     }
 }
