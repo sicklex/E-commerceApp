@@ -33,10 +33,18 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IIdentityService, IdentityService>();
+
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
 builder.Services.AddScoped<IDiscountService, DiscountService>();
+
+builder.Services.AddScoped<IIventoryRepository, InventoryRepository>();
+builder.Services.AddScoped<IIventoryService, InventoryService>();
+
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 
 // add authentication with jwt from another file

@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using Ecommerce.EFCoreApi.Application.DTOs.Request;
 using Ecommerce.EFCoreApi.Application.DTOs.Response;
-using Ecommerce.EFCoreApi.Domain.Entities;
 using Ecommerce.EFCoreApi.Domain.Interfaces.Services;
 using EcommerceApi.Controllers.Shared;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +8,7 @@ namespace EcommerceApi.Controllers
 {
     public class ProductController : ApiControllerBase
     {
-        private readonly IProductService _productService;
+        private IProductService _productService;
 
         public ProductController(IProductService productService)
         {
@@ -40,10 +38,10 @@ namespace EcommerceApi.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<int>> Add(PostProductRequest productRequest)
+        public async Task<ActionResult<int>> Add(AddProductRequest productRequest)
         {
-            var product = PostProductRequest.ToEntity(productRequest);
-            var id = await _productService.AddAsync(product);
+            var product = AddProductRequest.ToEntity(productRequest);
+            var id = (int)await _productService.AddAsync(product);
 
             return CreatedAtAction(nameof(GetById), new { id = id }, id);
         }

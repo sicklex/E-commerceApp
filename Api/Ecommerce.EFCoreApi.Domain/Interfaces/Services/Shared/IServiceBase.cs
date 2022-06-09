@@ -9,8 +9,8 @@ namespace Ecommerce.EFCoreApi.Domain.Interfaces.Services.Shared
 
         Task<object> AddAsync(TEntity entity);
 
-        Task<TEntity> UpdateAsync(TEntity entity);
+        Task UpdateAsync(TEntity entity);
 
-        Task<TEntity> DeleteByIdAsync(int id);
+        Task DeleteByIdAsync(int id);
     }
 }

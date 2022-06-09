@@ -467,7 +467,7 @@ namespace Ecommerce.EFCoreApi.Data.migrations
                     b.HasOne("Ecommerce.EFCoreApi.Domain.Entities.ProductInventory", "Inventory")
                         .WithOne("Product")
                         .HasForeignKey("Ecommerce.EFCoreApi.Domain.Entities.Product", "InventoryId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Categories");

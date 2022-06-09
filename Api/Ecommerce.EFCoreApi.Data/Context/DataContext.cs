@@ -21,5 +21,11 @@ namespace Ecommerce.EFCoreApi.Data.Context
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Categories> Categories { get; set; }
+        public DbSet<ProductInventory> ProductInventory { get; set; }
+        public DbSet<Discount> Discount { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+        public DbSet<OrderItems> OrderItems { get; set; }
+
+
     }
 }

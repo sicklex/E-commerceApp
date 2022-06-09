@@ -8,7 +8,7 @@ namespace EcommerceApi.Controllers
 {
     public class DiscountController : ApiControllerBase
     {
-        private readonly IDiscountService _discountService;
+        private IDiscountService _discountService;
 
         public DiscountController(IDiscountService discountService)
         {

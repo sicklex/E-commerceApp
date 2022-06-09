@@ -1,7 +1,7 @@
 using Ecommerce.EFCoreApi.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
+using System.Linq;
 
 namespace Ecommerce.EFCoreApi.Data.Mappings
 {
@@ -35,10 +35,9 @@ namespace Ecommerce.EFCoreApi.Data.Mappings
                 .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasOne(p => p.Inventory)
-                .WithOne(pi => pi.Product)
-                .HasForeignKey<Product>(pi => pi.InventoryId)
-                .OnDelete(DeleteBehavior.NoAction);
-
+                   .WithOne(pi => pi.Product)
+                   .HasForeignKey<Product>(pi => pi.InventoryId)
+                   .OnDelete(DeleteBehavior.NoAction);
             builder.HasOne(p => p.Discount)
                 .WithMany(d => d.Products)
                 .HasForeignKey(p => p.DiscountId);

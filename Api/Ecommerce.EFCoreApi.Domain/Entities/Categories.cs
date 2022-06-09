@@ -7,5 +7,12 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
 
         public ICollection<Product> Products { get; set; }
 
+
+        public Categories(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
     }
 }
