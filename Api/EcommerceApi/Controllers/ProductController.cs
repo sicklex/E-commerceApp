@@ -46,5 +46,14 @@ namespace EcommerceApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = id }, id);
         }
 
+
+        [HttpPut]
+
+        public async Task<ActionResult> Update(UpdateProductRequest productRequest)
+        {
+            var product = UpdateProductRequest.ToEntity(productRequest);
+            await _productService.UpdateAsync(product);
+            return Ok();
+        }
     }
 }

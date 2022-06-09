@@ -10,6 +10,15 @@ namespace Ecommerce.EFCoreApi.Data.Repositories
     {
         public ProductRepository(DataContext context) : base(context) { }
 
+
+        public async override Task<IEnumerable<Product>> GetAllAsync()
+        {
+            return await Context.Products
+                .Include(p => p.Categories)
+                .Include(p => p.Inventory)
+                .ToListAsync();
+        }
+
         public async override Task<Product?> GetByIdAsync(int id)
         {
             return await Context.Products

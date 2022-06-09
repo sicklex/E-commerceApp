@@ -14,9 +14,11 @@ namespace Ecommerce.EFCoreApi.Application.DTOs.Response
 
         public CategoryResponse CategoryReponse { get; set; }
 
+        public InventoryResponse InventoryResponse { get; set; }
+
 
         public ProductResponse(int id, string product_Sku, int categoryId, string name,
-         string description, decimal price, DateTime created_At, CategoryResponse categoryReponse)
+         string description, decimal price, DateTime created_At, CategoryResponse categoryReponse, InventoryResponse inventoryResponse)
         {
             Id = id;
             Product_Sku = product_Sku;
@@ -26,6 +28,7 @@ namespace Ecommerce.EFCoreApi.Application.DTOs.Response
             Price = price;
             Created_At = created_At;
             CategoryReponse = categoryReponse;
+            InventoryResponse = inventoryResponse;
         }
 
         public static ProductResponse ToDTO(Product product)
@@ -39,7 +42,8 @@ namespace Ecommerce.EFCoreApi.Application.DTOs.Response
                 product.Description,
                 product.Price,
                 product.Created_At,
-                new CategoryResponse(product.CategoryId, product.Categories.Name)
+                new CategoryResponse(product.CategoryId, product.Categories.Name),
+                new InventoryResponse(product.Inventory.Quantity)
             );
         }
     }

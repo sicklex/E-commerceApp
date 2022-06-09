@@ -21,8 +21,9 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
         public virtual Cart Cart { get; set; }
         public virtual OrderItems OrderItems { get; set; }
 
-        public Product(string name, string description, string productSku, int categoryId, int inventoryId, decimal price, int discountId)
+        public Product(int id, string name, string description, string productSku, int categoryId, int inventoryId, decimal price, int discountId)
         {
+            Id = id;
             Name = name;
             Description = description;
             Product_Sku = productSku;
@@ -32,11 +33,10 @@ namespace Ecommerce.EFCoreApi.Domain.Entities
             DiscountId = discountId;
         }
 
-        public Product()
-        {
+        public Product() { }
 
-        }
+        public Product(string name, string description, string productSku, int categoryId, int inventoryId, decimal price, int discountId)
+            : this(default, name, description, productSku, categoryId, inventoryId, price, discountId) { }
 
     }
-
 }
