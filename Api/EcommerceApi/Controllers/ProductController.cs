@@ -58,5 +58,12 @@ namespace EcommerceApi.Controllers
         }
 
 
+        [HttpDelete("{id}")]
+
+        public async Task<ActionResult> Delete(int id)
+        {
+            await _productService.DeleteByIdAsync(id);
+            return Ok();
+        }
     }
 }

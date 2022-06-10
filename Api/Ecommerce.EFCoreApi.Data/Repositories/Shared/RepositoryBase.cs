@@ -35,13 +35,18 @@ namespace Ecommerce.EFCoreApi.Data.Repositories.Shared
             await Context.SaveChangesAsync();
         }
 
+        public virtual async Task DeleteAsync(TEntity entity)
+        {
+            Context.Set<TEntity>().Remove(entity);
+            await Context.SaveChangesAsync();
+        }
+
         public virtual async Task DeleteByIdAsync(int id)
         {
             var entity = await GetByIdAsync(id);
             if (entity == null)
                 throw new Exception("This item does not exist");
-
-            await Context.SaveChangesAsync();
+            await DeleteAsync(entity);
         }
 
         public void Dispose() => Context.Dispose();

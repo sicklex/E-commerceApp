@@ -13,7 +13,6 @@ namespace Ecommerce.EFCoreApi.Identity.Services
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
-
         private readonly JwtOptions _jwtOptions;
 
         public IdentityService(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager, IOptions<JwtOptions> jwtOptions)
