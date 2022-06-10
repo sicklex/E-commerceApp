@@ -1,5 +1,6 @@
 using Ecommerce.EFCoreApi.Application.DTOs.Request;
 using Ecommerce.EFCoreApi.Application.DTOs.Response;
+using Ecommerce.EFCoreApi.Domain.Entities;
 using Ecommerce.EFCoreApi.Domain.Interfaces.Services;
 using EcommerceApi.Controllers.Shared;
 using Microsoft.AspNetCore.Mvc;
@@ -55,5 +56,7 @@ namespace EcommerceApi.Controllers
             await _productService.UpdateAsync(product);
             return Ok();
         }
+
+
     }
 }

@@ -31,11 +31,8 @@ namespace Ecommerce.EFCoreApi.Data.Repositories.Shared
 
         public virtual async Task UpdateAsync(TEntity entity)
         {
-
             Context.Entry(entity).State = EntityState.Modified;
             await Context.SaveChangesAsync();
-
-
         }
 
         public virtual async Task DeleteByIdAsync(int id)

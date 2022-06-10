@@ -37,11 +37,11 @@ namespace EcommerceApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = id.Id }, id.Id);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut]
 
-        public async Task<ActionResult> Update(InventoryRequest productInventory)
+        public async Task<ActionResult> Update(UpdateInventoryRequest productInventory)
         {
-            var id = InventoryRequest.ToEntity(productInventory);
+            var id = UpdateInventoryRequest.ToEntity(productInventory);
             await _inventoryService.UpdateAsync(id);
             return Ok();
         }
